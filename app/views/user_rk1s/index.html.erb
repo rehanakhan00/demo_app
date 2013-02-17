@@ -1,0 +1,27 @@
+<h1>Listing user_rk1s</h1>
+
+<table>
+  <tr>
+    <th>Rk name</th>
+    <th>Rk </th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_rk1s.each do |user_rk1| %>
+  <tr>
+    <td><%= user_rk1.rk_name %></td>
+    <td><%= user_rk1.rk_ %></td>
+    <td><%= user_rk1.email %></td>
+    <td><%= link_to 'Show', user_rk1 %></td>
+    <td><%= link_to 'Edit', edit_user_rk1_path(user_rk1) %></td>
+    <td><%= link_to 'Destroy', user_rk1, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User rk1', new_user_rk1_path %>
